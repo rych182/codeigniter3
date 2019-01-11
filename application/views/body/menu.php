@@ -14,8 +14,34 @@
 			<div class="menu">
 				<ul class="nav nav-tabs" role="tablist">
 					<li role="presentation"  class="active"><a href="index.html">Home</a></li>
-					<li role="presentation"><a href="<?php echo base_url();?>inicio/nosotros">Nosotros</a></li>
-					<li role="presentation"><a href="<?php echo base_url();?>inicio/contacto">Contacto</a></li>						
+					<li role="presentation">
+						<!--
+							URL = http://localhost/codeigniter/
+							nombreContralador = inicio
+							nombreMetodo = nosotros
+
+							URL + nombreContralador + nombreMetodo
+
+							http://localhost/codeigniter/inicio/nosotros
+						-->
+						<a href="<?php echo base_url();?>inicio/nosotros">Nosotros</a>
+					</li>
+					<li role="presentation">
+						<!--
+							URL = http://localhost/codeigniter/
+							nombreContralador = inicio
+							nombreMetodo = contacto
+
+							URL + nombreContralador + nombreMetodo
+
+							http://localhost/codeigniter/inicio/contacto
+						-->
+						<a href="<?php echo base_url();?>inicio/contacto">Contacto</a>
+					</li>
+					<!-- AQUÍ CREAMOS UN ITEM EN EL MENÚ -->
+	               <li role="presentation">
+	                  <a href="<?php echo base_url();?>inicio/datos">Datos BD</a>
+	               </li>						
 				</ul>
 			</div>
 		</div>			
